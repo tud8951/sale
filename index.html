@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="https://bigjackson.us.kg/img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigJackson的网店</title>
+    <style>
+{
+            padding:0px;
+            margin:0px;
+        }
+        body{
+            font-family: '微软雅黑';
+        }
+        .sl{
+            white-space: nowrap;
+            word-break: keep-all;
+            text-overflow: ellipsis;
+        }
+        #big{
+            width:950px;
+            height:416px;
+            margin:10px auto;
+            overflow: hidden;
+        }
+        #big>.box{
+            width:298px;
+            height:410px;
+            float: left;
+            position: relative;
+            overflow: hidden;
+            border:1px solid #ccc;
+            margin-left:19px;
+        }
+        #big>.box:first-child{
+            margin-left:0px;
+        }
+        #big>.box>.pic{
+            width:298px;
+            height:300px;
+            overflow: hidden;
+        }
+        #big>.box>.pic>img{
+            transition: all 500ms;
+        }
+        #big>.box:hover>.pic>img{
+            transform: scale(1.5);
+        }
+        #big>.box>.mask{
+            height:300px;
+            width:298px;
+            position: absolute;
+            left:-298px;
+            top:0px;
+            background:rgba(0,0,0,0.3);
+            transition: all 600ms;
+            color:#fff;
+        }
+        #big>.box>.mask>h2{
+            font-size: 18px;
+            margin:80px 0px 10px 10px;
+        }
+        #big>.box>.mask>p{
+            font-size: 12px;
+            margin:0px 0px 10px 10px;
+        }
+        #big>.box:hover>.mask{
+            left:0px;
+        }
+        #big>.box>.title>h2{
+            margin:10px auto;
+            width:288px;
+            height:20px;
+            line-height: 20px;
+            font-size: 14px;
+            color:#333;
+            overflow: hidden;
+            font-weight: normal;
+        }
+        #big>.box>.title>h2>span{
+            display: inline-block;
+            width:31px;
+            height:16px;
+            vertical-align: middle;
+            background: url('img/tu.png') no-repeat;
+            background-size:cover;
+            margin-right:5px;
+        }
+        #big>.box>.title>h3{
+            width:288px;
+            height:20px;
+            margin:0px auto;
+            font-size: 12px;
+            color:#666;
+            font-weight: 400;
+        }
+        #big>.box>.title>h3>i{
+            width:12px;
+            height:16px;
+            display: inline-block;
+            background:url('img/tu1.jpg') no-repeat;
+            vertical-align: middle;
+        }
+        #big>.box>.title>h3>span{
+            color:#f00;
+            margin:0 5px 0 5px;
+        }
+        #big>.box>.title>.price{
+            width:298px;
+            height:50px;
+            background:#e61414;
+        }
+        #big>.box>.title>.price>.zx_pr>span{
+            font-size: 20px;
+        }
+        #big>.box>.title>.price>.zx_pr{
+            width:83px;
+            height:50px;
+            line-height: 50px;
+            float: left;
+            margin-left:2px;
+            vertical-align: bottom;
+            font-size:38px;
+            color:#fff;
+        }
+        #big>.box>.title>.price>.buy{
+            width:56px;
+            height:50px;
+            line-height: 50px;
+            text-align: center;
+            background:url('img/tu3.png') no-repeat;
+            float:right;
+            color:#f00;
+        }
+        #big>.box>.title>.price>.xl_yp{
+            width:145px;
+            height:41px;
+            float: left;
+            margin:4px 0 0 8px;
+            font-size: 12px;
+            color:#fff;
+        }
+        #big>.box>.title>.price>.xl_yp>p>span{
+            margin-left:4px;
+            width:72px;
+            height:17px;
+            display: inline-block;
+            line-height: 17px;
+            text-align: center;
+            border-radius: 10px;
+            background:#ffb369;
+        }
+        #big>.box>.title>.price>.xl_yp>p:nth-child(2){
+            width:80px;
+            height:20px;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 1px;
+            margin-top:5px;
+            background:rgba(0,0,0,0.2);
+        }
+        #big>.box>.title>.price>.xl_yp>p:nth-child(2)>strong{
+            margin-right: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<div id="big">
+            <div class="box">
+                <div class="pic"><img src="https://bigjackson.us.kg/sale/IMG/1.jpg" alt="" title=""/></div>
+                <div class="mask">
+                    <h2>二手Apple Watch SE2023</h2>
+                    <p>黑色 40mm 电池健康90 九成新 顺丰包邮</p>
+                </div>
+                <div class="title">
+                    <h2 class="sl"><span></span>全场2折起 印花波士顿包 专柜终身保养</h2>
+                    <h3 class="sl"><i></i><span>抢全场2件88折</span>新款蜜蜂系列印花手提斜挎包</h3>
+                    <div class="price">
+                        <div class="zx_pr"><span>￥</span>659</div>
+                        <div class="xl_yp">
+                            <p><del>￥1998.00</del><span>退货赔运费</span></p>
+                            <p><strong>70</strong>件已付款</p>
+                        </div>
+                        <div class="buy">抢!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                 <div class="pic"><img src="img/bag3.jpg" alt="" title=""/></div>
+                 <div class="mask">
+                    <h2>猪年纪念款经典牛皮水桶包</h2>
+                    <p>猪年纪念款 经典牛皮水桶包，自带强大气场</p>
+                 </div>
+                 <div class="title">
+                    <h2 class="sl"><span></span>全场2折起 印花波士顿包 专柜终身保养</h2>
+                    <h3 class="sl"><i></i><span>抢全场2件88折</span>新款蜜蜂系列印花手提斜挎包</h3>
+                    <div class="price">
+                        <div class="zx_pr"><span>￥</span>659</div>
+                        <div class="xl_yp">
+                            <p><del>￥1998.00</del><span>退货赔运费</span></p>
+                            <p><strong>70</strong>件已付款</p>
+                        </div>
+                       <div class="buy">抢!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic"><img src="img/bag4.jpg" alt="" title=""/></div>
+                <div class="mask">
+                    <h2>一包四用蜜蜂系列迷你小方包</h2>
+                    <p>四用方盒包 一包四用蜜蜂系列迷你链条小方包</p>
+                </div>
+                <div class="title">
+                    <h2 class="sl"><span></span>全场2折起 印花波士顿包 专柜终身保养</h2>
+                    <h3 class="sl"><i></i><span>抢全场2件88折</span>新款蜜蜂系列印花手提斜挎包</h3>
+                    <div class="price">
+                        <div class="zx_pr"><span>￥</span>659</div>
+                        <div class="xl_yp">
+                            <p><del>￥1998.00</del><span>退货赔运费</span></p>
+                            <p><strong>70</strong>件已付款</p>
+                            </div>
+                        <div class="buy">抢!</div>
+                    </div>
+                </div>
+            </div> 
+        </div>
