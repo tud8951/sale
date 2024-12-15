@@ -1,228 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="https://bigjackson.us.kg/img/favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BigJackson的网店</title>
-    <style>
-{
-            padding:0px;
-            margin:0px;
-        }
-        body{
-            font-family: '微软雅黑';
-        }
-        .sl{
-            white-space: nowrap;
-            word-break: keep-all;
-            text-overflow: ellipsis;
-        }
-        #big{
-            width:950px;
-            height:416px;
-            margin:10px auto;
-            overflow: hidden;
-        }
-        #big>.box{
-            width:298px;
-            height:410px;
-            float: left;
-            position: relative;
-            overflow: hidden;
-            border:1px solid #ccc;
-            margin-left:19px;
-        }
-        #big>.box:first-child{
-            margin-left:0px;
-        }
-        #big>.box>.pic{
-            width:298px;
-            height:300px;
-            overflow: hidden;
-        }
-        #big>.box>.pic>img{
-            transition: all 500ms;
-        }
-        #big>.box:hover>.pic>img{
-            transform: scale(1.5);
-        }
-        #big>.box>.mask{
-            height:300px;
-            width:298px;
-            position: absolute;
-            left:-298px;
-            top:0px;
-            background:rgba(0,0,0,0.3);
-            transition: all 600ms;
-            color:#fff;
-        }
-        #big>.box>.mask>h2{
-            font-size: 18px;
-            margin:80px 0px 10px 10px;
-        }
-        #big>.box>.mask>p{
-            font-size: 12px;
-            margin:0px 0px 10px 10px;
-        }
-        #big>.box:hover>.mask{
-            left:0px;
-        }
-        #big>.box>.title>h2{
-            margin:10px auto;
-            width:288px;
-            height:20px;
-            line-height: 20px;
-            font-size: 14px;
-            color:#333;
-            overflow: hidden;
-            font-weight: normal;
-        }
-        #big>.box>.title>h2>span{
-            display: inline-block;
-            width:31px;
-            height:16px;
-            vertical-align: middle;
-            background: url('img/tu.png') no-repeat;
-            background-size:cover;
-            margin-right:5px;
-        }
-        #big>.box>.title>h3{
-            width:288px;
-            height:20px;
-            margin:0px auto;
-            font-size: 12px;
-            color:#666;
-            font-weight: 400;
-        }
-        #big>.box>.title>h3>i{
-            width:12px;
-            height:16px;
-            display: inline-block;
-            background:url('img/tu1.jpg') no-repeat;
-            vertical-align: middle;
-        }
-        #big>.box>.title>h3>span{
-            color:#f00;
-            margin:0 5px 0 5px;
-        }
-        #big>.box>.title>.price{
-            width:298px;
-            height:50px;
-            background:#e61414;
-        }
-        #big>.box>.title>.price>.zx_pr>span{
-            font-size: 20px;
-        }
-        #big>.box>.title>.price>.zx_pr{
-            width:83px;
-            height:50px;
-            line-height: 50px;
-            float: left;
-            margin-left:2px;
-            vertical-align: bottom;
-            font-size:38px;
-            color:#fff;
-        }
-        #big>.box>.title>.price>.buy{
-            width:56px;
-            height:50px;
-            line-height: 50px;
-            text-align: center;
-            background:url('img/tu3.png') no-repeat;
-            float:right;
-            color:#f00;
-        }
-        #big>.box>.title>.price>.xl_yp{
-            width:145px;
-            height:41px;
-            float: left;
-            margin:4px 0 0 8px;
-            font-size: 12px;
-            color:#fff;
-        }
-        #big>.box>.title>.price>.xl_yp>p>span{
-            margin-left:4px;
-            width:72px;
-            height:17px;
-            display: inline-block;
-            line-height: 17px;
-            text-align: center;
-            border-radius: 10px;
-            background:#ffb369;
-        }
-        #big>.box>.title>.price>.xl_yp>p:nth-child(2){
-            width:80px;
-            height:20px;
-            line-height: 20px;
-            text-align: center;
-            border-radius: 1px;
-            margin-top:5px;
-            background:rgba(0,0,0,0.2);
-        }
-        #big>.box>.title>.price>.xl_yp>p:nth-child(2)>strong{
-            margin-right: 5px;
-            font-size: 14px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小兔鲜儿-新鲜、惠民、快捷！</title>
+  <meta name="description" content="小兔鲜儿官网，致力于打造全球最大的食品、生鲜电商购物平台。">
+  <meta name="keywords" content="小兔鲜儿,食品,生鲜,服装,家电,电商,购物">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
-<div id="big">
-            <div class="box">
-                <div class="pic"><img src="https://bigjackson.us.kg/sale/IMG/1.jpg" alt="" title=""/></div>
-                <div class="mask">
-                    <h2>二手Apple Watch SE2023</h2>
-                    <p>黑色 40mm 电池健康90 九成新 顺丰包邮</p>
-                </div>
-                <div class="title">
-                    <h2 class="sl"><span></span>二手Apple Watch SE2023</h2>
-                    <h3 class="sl"><i></i><span>全网最低价</span>黑色 40mm 电池健康90 九成新 顺丰包邮</h3>
-                    <div class="price">
-                        <div class="zx_pr"><span>￥</span>760</div>
-                        <div class="xl_yp">
-                            <p><del>￥1999.00</del><span>顺丰包邮</span></p>
-                            <p><strong>70</strong>件已付款</p>
-                        </div>
-                        <div class="buy">抢!</div>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                 <div class="pic"><img src="img/bag3.jpg" alt="" title=""/></div>
-                 <div class="mask">
-                    <h2>猪年纪念款经典牛皮水桶包</h2>
-                    <p>猪年纪念款 经典牛皮水桶包，自带强大气场</p>
-                 </div>
-                 <div class="title">
-                    <h2 class="sl"><span></span>全场2折起 印花波士顿包 专柜终身保养</h2>
-                    <h3 class="sl"><i></i><span>抢全场2件88折</span>新款蜜蜂系列印花手提斜挎包</h3>
-                    <div class="price">
-                        <div class="zx_pr"><span>￥</span>659</div>
-                        <div class="xl_yp">
-                            <p><del>￥1998.00</del><span>退货赔运费</span></p>
-                            <p><strong>70</strong>件已付款</p>
-                        </div>
-                       <div class="buy">抢!</div>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="pic"><img src="img/bag4.jpg" alt="" title=""/></div>
-                <div class="mask">
-                    <h2>一包四用蜜蜂系列迷你小方包</h2>
-                    <p>四用方盒包 一包四用蜜蜂系列迷你链条小方包</p>
-                </div>
-                <div class="title">
-                    <h2 class="sl"><span></span>全场2折起 印花波士顿包 专柜终身保养</h2>
-                    <h3 class="sl"><i></i><span>抢全场2件88折</span>新款蜜蜂系列印花手提斜挎包</h3>
-                    <div class="price">
-                        <div class="zx_pr"><span>￥</span>659</div>
-                        <div class="xl_yp">
-                            <p><del>￥1998.00</del><span>退货赔运费</span></p>
-                            <p><strong>70</strong>件已付款</p>
-                            </div>
-                        <div class="buy">抢!</div>
-                    </div>
-                </div>
-            </div> 
+<body>
+  <!-- 头部模块-->
+  <header>
+    <!-- 快捷菜单模块-->
+    <div class="xtx-shortcut">
+      <div class="container"> 
+        <ul class="fr">
+          <li><a href="">请先登录</a>|</li>
+          <li><a href="">免费注册</a>|</li>
+          <li><a href="">我的订单</a>|</li>
+          <li><a href="">会员中心</a>|</li>
+          <li><a href="">帮助中心</a>|</li>
+          <li><a href="">在线客服</a>|</li>
+          <li><a href="">手机版</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- #主导航模块-->
+    <div class="xtx-main-nav container">
+        <!-- #logo -->
+        <h1 class="logo fl">
+          <a href="#">小兔鲜儿</a>
+        </h1>
+        <nav class="fl">
+          <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">生鲜</a></li>
+            <li><a href="#">美食</a></li>
+            <li><a href="#">餐厨</a></li>
+            <li><a href="#">电器</a></li>
+            <li><a href="#">居家</a></li>
+            <li><a href="#">洗护</a></li>
+            <li><a href="#">孕婴</a></li>
+            <li><a href="#">服装</a></li>
+          </ul>
+        </nav>
+        <!-- #search -->
+        <div class="search fl">
+          <input type="search" placeholder="搜一艘">
         </div>
+        <!-- #cart-->
+        <div class="cart fl">
+          <span>2</span>
+        </div>
+  </header>
+  <!-- #网站入口模块-->
+  <div class="xtx-entry">
+    <div class="container">
+      <!-- #轮播图 -->
+      <ul class="banner">
+        <li>
+          <a href="">
+            <img src="./uploads/banner_1.png" alt="">
+          </a>
+        </li>
+      </ul>
+      <!-- #侧边栏 -->
+      <aside class="category">
+        <ul>
+          <li><a href="#">生鲜 <span>水果 蔬菜</span></a></li>
+          <li><a href="#">美食 <span>面点 水果</span></a></li>
+          <li><a href="#">餐厨 <span>数码产品</span></a></li>
+          <li><a href="#">电器 <span>床品 四件套 被枕</span></a></li>
+          <li><a href="#">居家 <span>奶粉 玩具 辅食</span></a></li>
+          <li><a href="#">洗护 <span>洗发 洗护 美妆</span></a></li>
+          <li><a href="#">孕婴 <span>奶粉 玩具</span></a></li>
+          <li><a href="#">服饰 <span>女装 男装</span></a></li>
+          <li><a href="#">杂货 <span>户外 图书</span></a></li>
+          <li><a href="#">品牌 <span>品牌制造</span></a></li>
+        </ul>
+      </aside>
+      <!-- #左右按钮 -->
+      <a href="#" class="prev"></a>
+      <a href="#" class="next"></a>
+      <!-- #轮播图指示器 -->
+      <ol class="indicator">
+        <li></li>
+        <li></li>
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+      </ol>
+    </div>
+  </div>
+  <!-- #新鲜好物模块 -->
+  <div class="xtx-new-goods container">
+    <!-- #好物模块头部 -->
+    <div class="goods-hd">
+      <!-- #左边h2 -->
+      <h2 class="fl">
+        新鲜好物 <span>新鲜出炉 品质靠谱</span>
+      </h2>
+      <!-- #右边的a -->
+      <a href="#" class="fr">查看全部</a>
+    </div>
+    <!-- #好物模块列表 -->
+    <div class="goods-list">
+      <ul>
+        <li>
+          <img src="./uploads/new_goods_1.jpg" alt="">
+          <h3>睿米无限吸尘器F8</h3>
+          <p><span>￥</span> 899</p>
+        </li>
+        <li>
+          <img src="./uploads/new_goods_2.jpg" alt="">
+          <h3>智能环绕3的空调</h3>
+          <p><span>￥</span> 1299</p>
+        </li>
+        <li>
+          <img src="./uploads/new_goods_3.jpg" alt="">
+          <h3>广东软软糯米煲仔饭</h3>
+          <p><span>￥</span> 129</p>
+        </li>
+        <li>
+          <img src="./uploads/new_goods_4.jpg" alt="">
+          <h3>罗西机械智能手表</h3>
+          <p><span>￥</span> 3399</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- #底部模块 -->
+  <footer>
+    <!-- #宣传服务 -->
+    <div class="xtx-service">
+      <div class="container">
+        <a href="#">价格亲民</a>
+        <a href="#">物流快捷</a>
+        <a href="#">品质新鲜</a>
+      </div>
+    </div>
+    <!-- #版权信息 -->
+    <div class="xtx-copyright">
+      <div class="container">
+        <p>
+          <a href="#">关于我们</a> |
+          <a href="#">帮助中心</a> | 
+          <a href="#">售后服务</a> |
+          <a href="#">配送与验收</a> |
+          <a href="#">商务合作</a> |
+          <a href="#">搜索推荐</a> |
+          <a href="#">友情链接</a>
+        </p>
+        <p>
+          CopyRight @ 小兔鲜儿
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
